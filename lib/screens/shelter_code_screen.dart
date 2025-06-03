@@ -5,7 +5,7 @@ import 'package:flutter_node_auth/data/unique_data.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 class ShelterCodeScreen extends StatefulWidget {
-  const ShelterCodeScreen({Key? key}) : super(key: key);
+  const ShelterCodeScreen({super.key});
 
   @override
   State<ShelterCodeScreen> createState() => _ShelterCodeScreenState();

@@ -9,10 +9,10 @@ class TaskCommentsPage extends StatefulWidget {
   final List<String> selectedSubtasks;
 
   const TaskCommentsPage({
-    Key? key,
+    super.key,
     required this.taskTitle,
     required this.selectedSubtasks,
-  }) : super(key: key);
+  });
 
   @override
   _TaskCommentsPageState createState() => _TaskCommentsPageState();
@@ -32,7 +32,7 @@ class _TaskCommentsPageState extends State<TaskCommentsPage> {
       print('TaskCommentsPage - taskTitle: ${widget.taskTitle}');
       print('TaskCommentsPage - selectedSubtasks: ${widget.selectedSubtasks}');
 
-      if (widget.taskTitle == null || widget.taskTitle.isEmpty) {
+      if (widget.taskTitle.isEmpty) {
         print('Error: taskTitle is null or empty');
         return;
       }
